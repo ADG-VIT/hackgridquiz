@@ -125,7 +125,7 @@ class App extends Component {
     if(this.state.registered===false)
     return(
       <div>
-      <input type="password" id="password" className="" name="login" placeholder="password" value={this.state.password} onChange={this.passwordOnChange.bind(this)} required/>      
+      <input type="password" id="password" className="" name="login" placeholder="Password" value={this.state.password} onChange={this.passwordOnChange.bind(this)} required/>      
       <br/>
       <input className="btn btn-primary" id="rButton" type="submit" value="Register"/>
       </div>
@@ -133,7 +133,7 @@ class App extends Component {
 
     return(
       <div>
-      <input type="password" id="password" className="" name="login" placeholder="password" value={this.state.password} onChange={this.passwordOnChange.bind(this)} required/>
+      <input type="password" id="password" className="" name="login" placeholder="Password" value={this.state.password} onChange={this.passwordOnChange.bind(this)} required/>
       <p style={{color: 'blue'}}>Registered</p>      
       <br/>
       <input className="btn btn-primary" id="rButton" type="submit" value="Log In"/>

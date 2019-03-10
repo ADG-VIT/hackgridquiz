@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/hackgridquiz/precache-manifest.4c0394e17f1c7335e3073f46147bef34.js"
+  "/hackgridquiz/precache-manifest.138fb6797b1119e7df54ca0c891cc059.js"
 );
 
 workbox.clientsClaim();

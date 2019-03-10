@@ -281,7 +281,7 @@ hitTimer(swi){
     if(this.state.counter===2)
     return(
       <div><img id="waitImg"
-        src={wait} alt="namilehai"/></div>
+        src={wait} alt="...."/></div>
     )
     
     return(
@@ -321,7 +321,7 @@ hitTimer(swi){
               className="questionNumber tag"
               style={{ justifyContent: "center" }}
             >
-              Quesetion {this.state.liveQuestion} of 10
+              Question {this.state.liveQuestion} of 10
             </p>
           </div>
           <br />

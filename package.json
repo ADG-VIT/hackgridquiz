@@ -2,7 +2,7 @@
   "name": "player-console",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Yashboss.github.io/QuizPortal/",
+  "homepage": "https://ADG-VIT.github.io/hackgridquiz/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "firebase": "^5.8.5",

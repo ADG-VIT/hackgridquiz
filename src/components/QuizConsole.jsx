@@ -6,6 +6,10 @@ import wait from '../image/quiz.png'
 
 const needDominantBaselineFix = true;
 
+let timer=15;
+
+let percentage=0;
+
 class QuizConsole extends Component {
   constructor(props) {
     super(props);
@@ -49,7 +53,7 @@ class QuizConsole extends Component {
         
         let firebaseUserInfo = firebase.database().ref(`players/${this.props.teamName}`);
         firebaseUserInfo.once("value", (snapshot)=> {
-         this.setState({ counter : snapshot.val().counter})
+         this.setState({ counter : 0})
         });
 
         
@@ -71,14 +75,17 @@ class QuizConsole extends Component {
     perc+=6.66666666666666666;
     if(perc>99){
     killTimer();
-    this.setState({counter: 2})
     }
+
     if(time<10)
     time = '0'+time;
     this.setState({timer: time,
       percentage: perc})
+    // timer= time;
   }, 1000);
 
+  if(this.state.timer>15)
+  killTimer();
 
 var killTimer=()=>{
   clearInterval(mytimer)
@@ -217,6 +224,7 @@ hitTimer(swi){
           
           let firebaseChangeCounter2 = firebase.database().ref(`players/${this.props.teamName}`);
           firebaseChangeCounter2.child('counter').set(2);
+          this.setState({counter: 2});
       })
   }
 
